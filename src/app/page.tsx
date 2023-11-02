@@ -1,3 +1,4 @@
+// This is the apps default home page, navigate to it with "/"
 
 const Home = () => {
 
