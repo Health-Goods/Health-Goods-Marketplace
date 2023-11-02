@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
+
 import Navbar from './navbar';
-import Footer from './footer';
+import Sidebar from './sidebar';
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,10 @@ const Navigation = () => {
 
     return (
         <>
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navbar toggle={toggle} />
         </>
     )
 }
+
+export default Navigation;
