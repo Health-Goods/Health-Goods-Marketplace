@@ -1,12 +1,15 @@
 "use client";
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
-    const [query, setQuery] = useState('');
+interface SearchBarProps {
+    onSearch: (query: string) => void; // Define the type for the onSearch prop
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+    const [query, setQuery] = useState(''); // useState for users search query
 
     const handleSearch = () => {
-        // Call the onSearch callback with the search query
-        onSearch(query);
+        onSearch(query); // Call the onSearch callback with the search query
     };
 
     return (

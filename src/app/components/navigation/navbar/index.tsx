@@ -7,6 +7,12 @@ const Navbar = ({
 }: {
     toggle: () => void;
 }): JSX.Element => {
+    // Function to handle search queries
+    const handleSearch = (query: string) => {
+        // For now, handle queries in the console
+        console.log(`Searching for: ${query}`);
+        // TODO future search logic here
+    }
 
     return (
         <>
@@ -20,7 +26,7 @@ const Navbar = ({
                                 </Link>
                             </li>
                             <li>
-                                <SearchBar />
+                                <SearchBar onSearch={handleSearch} />
                             </li>
                             <li>
                                 <Link href='/about'>

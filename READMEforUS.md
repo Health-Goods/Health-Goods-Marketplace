@@ -142,3 +142,6 @@ Database and model diagram created with lucid.com
     The shipping model will track different shipping methods for orders,
 
     Keys: id, name, rate, estimated_delivery_time
+
+# Search bar
+    For defining the type of onSearch prop in search bar i used an interface and React.FC(functional component). This is to define the type of the whole react component. When defining the type of a component we want to use the interface and FC method provided by typescript, while in the navbar i just directly defined the type of the query prop since it is a simple string type, and just a variable within our entire navbar component
