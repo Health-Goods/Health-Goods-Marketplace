@@ -19,7 +19,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
                 placeholder="Search for products..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="p-2 border border-gray-300 rounded-1 focus:outline-none"
+                className="p-2 border border-gray-300 rounded-1 text-gray-500 focus:outline-none"
             />
             <button
                 onClick={handleSearch}
