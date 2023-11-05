@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import SearchBar from '../search-bar';
+
 const Navbar = ({
     toggle,
 }: {
@@ -16,6 +18,9 @@ const Navbar = ({
                                 <Link href='/'>
                                     <p>Home</p>
                                 </Link>
+                            </li>
+                            <li>
+                                <SearchBar />
                             </li>
                             <li>
                                 <Link href='/about'>
