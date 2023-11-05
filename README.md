@@ -1,19 +1,21 @@
 # Health Goods Marketplace
-    - An ecommerce site by Erik and Cory
+## An ecommerce site by Erik and Cory
 
-# Frontend
-    ## Nextjs
-        - NextAuth
-    ## Vercel
+## Frontend
+Nextjs
+Vercel
+Tailwind
 
-    ## Css Framework 
-        - Tailwind
-# Backend
-    ## Supabase
-        - Postgres
-    ## Prisma
+## Backend
+Supabase with postgres
+Prisma
+Lucid.com for model flowchart
+![Alt text](<public/Health Goods Marketplace.jpeg>)
 
-# Maybe
-    ## Redux
+## Other Technologies
+Auth0 for authentication
+
+## Maybe
+Redux
 
 Initial navbar, followed tutorial from https://medium.com/@a.pirus/how-to-create-a-responsive-navigation-bar-in-next-js-13-e5540789a017#:~:text=Within%20the%20'components'%20folder%2C,menu%20button%20in%20mobile%20view.
