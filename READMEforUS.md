@@ -18,3 +18,9 @@ To create a page, create a new directory within the app directory and name it af
 
 # React hooks
 It looks like we need to add "use client" at the top of our code if we want to use useState
+
+# Supabase
+1. npm i @supabase/supabase-js to install supabase client in project
+2. Configure environment variables for URL and API_KEY in .env file
+3. Create a module or utility function to initialize supabase client, i did a module named supabase.js
+4. Now we can use the supabase instance to interact with the database, just import supabase from supabase.js in the file you want to perform a db operation
