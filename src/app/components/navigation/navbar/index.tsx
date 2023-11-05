@@ -1,10 +1,18 @@
 import Link from 'next/link';
 
+import SearchBar from '../search-bar';
+
 const Navbar = ({
     toggle,
 }: {
     toggle: () => void;
 }): JSX.Element => {
+    // Function to handle search queries
+    const handleSearch = (query: string) => {
+        // For now, handle queries in the console
+        console.log(`Searching for: ${query}`);
+        // TODO future search logic here
+    }
 
     return (
         <>
@@ -16,6 +24,9 @@ const Navbar = ({
                                 <Link href='/'>
                                     <p>Home</p>
                                 </Link>
+                            </li>
+                            <li>
+                                <SearchBar onSearch={handleSearch} />
                             </li>
                             <li>
                                 <Link href='/about'>
